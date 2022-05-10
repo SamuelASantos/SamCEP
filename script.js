@@ -31,7 +31,7 @@ function montarBusca(info) {
     document.querySelector("#info-cep").innerHTML = info.cep;
     document.querySelector("#info-logradouro").innerHTML = info.logradouro;
     document.querySelector("#info-bairro").innerHTML = info.bairro;
-    document.querySelector("#info-cidade").innerHTML = info.localidade;
+    document.querySelector("#info-cidade").innerHTML = info.localidade+" - "+info.uf;
     document.querySelector("#cep").value = "";
     document.querySelector(".bd-end").toggleAttribute("hidden");
     } else {
