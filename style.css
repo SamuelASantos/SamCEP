@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-color: #D25B2E;
+    --secondary-color: #1C1E24;
+    --tertiary-color: #3c887e;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -18,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .border {
     margin: 30px 0;
     border-top: 1px #fff solid;
@@ -30,12 +38,14 @@ body {
 header .container #logo {
     font-size: 50px;
     margin: 30px 0;
-    color: orangered;
+    color: var(--primary-color);
     font-weight: bold;
 }
+
 header .container #logo span {
     color: #fff;
 }
+
 header .container h2 {
     font-size: 20px;
     margin-bottom: 30px;
@@ -51,14 +61,22 @@ section .container input {
     border-radius: 5px;
     border: none;
 }
+
 section .container button {
-    background-color: orangered;
+    background-color: var(--primary-color);
+    color: #FFF;
     width: 200px;
     padding: 10px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
 }
+
+section .container button:hover {
+    background-color: var(--tertiary-color);
+    /* color: var(--secondary-color); */
+}
+
 section .container .infos {
     padding: 5px 0;
     font-size: 15px;
@@ -68,10 +86,12 @@ footer {
     margin-top: 30px;
     font-size: 15px;
 }
+
 footer a {
     color: #fff;
     text-decoration: none;
 }
+
 footer a:hover {
-    color: orangered;
+    color: var(--primary-color);
 }
